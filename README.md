@@ -1,6 +1,2 @@
-# C30 Project
-
-OUTPUT LINK
-
-
-https://agnikasunil.github.io/C30-Project/
+# p5.play-boilerplate
+Boiler plate for p5.play
