@@ -6,6 +6,10 @@ const Constraint = Matter.Constraint;
 var engine,world;
 var ground,platform1,platform2;
 
+var block1,block2,block3,block4,block5,block6,block7,block8,
+block9,block10,block11,block12,block13,block14,block15,block16;
+
+var score = 0;
 function preload(){
   polygonImg = loadImage("Images/hexagon1.png");
   legoImg = loadImage("Images/lego_logo.jpeg");
@@ -59,6 +63,11 @@ function draw() {
   background(0);  
   Engine.update(engine);
 
+  /*fill(255,20,147);
+  textSize(30);
+  text("score :"+score,1100,150);*/
+  console.log(score);
+
   fill("#00FFFF")
   textSize(70);
   textFont("Savoye LET");
@@ -71,21 +80,52 @@ function draw() {
   image(polygonImg,polygon.position.x,polygon.position.y,60,50);
 
   block1.display();
+  block1.score();
+
   block2.display();
+  block2.score();
+
   block3.display();
+  block3.score();
+
   block4.display();
+  block4.score();
+
   block5.display();
+  block5.score();
+
   block6.display();
+  block6.score();
+
   block7.display();
+  block7.score();
+
   block8.display();
+  block8.score();
+
   block9.display();
+  block9.score();
+
   block10.display();
+  block10.score();
+
   block11.display();
+  block11.score();
+
   block12.display();
+  block12.score();
+
   block13.display();
+  block13.score();
+
   block14.display();
+  block14.score();
+
   block15.display();
+  block15.score();
+
   block16.display();
+  block16.score();
 
   slingshot.display();
 

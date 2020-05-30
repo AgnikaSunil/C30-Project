@@ -2,9 +2,10 @@ class Block7 extends BaseClass {
   constructor(x,y){
     super(x,y,100,60);
     this.image = loadImage("Images/white.png");
+    this.Visiblity = 255;
   }
-  display(){
 
+  display(){
     if(this.body.speed<3){
       super.display();
       image(this.image,this.body.position.x,this.body.position.y,105,80);
@@ -16,6 +17,12 @@ class Block7 extends BaseClass {
       tint(255,this.Visibility);
       image(this.image,this.body.position.x,this.body.position.y,105,80);
       pop();
+    }
+  }
+
+  score(){
+    if(this.Visiblity<0 && this.Visiblity>-1005){
+      score++;
     }
   }
 };
