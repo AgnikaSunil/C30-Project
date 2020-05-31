@@ -2,7 +2,7 @@ class Block7 extends BaseClass {
   constructor(x,y){
     super(x,y,100,60);
     this.image = loadImage("Images/white.png");
-    this.Visiblity = 255;
+    this.Visibility = 255;
   }
 
   display(){
@@ -21,7 +21,7 @@ class Block7 extends BaseClass {
   }
 
   score(){
-    if(this.Visiblity<0 && this.Visiblity>-1005){
+    if(this.Visibility<0 && this.Visibility>-1005){
       score++;
     }
   }

@@ -63,14 +63,13 @@ function draw() {
   background(0);  
   Engine.update(engine);
 
-  /*fill(255,20,147);
-  textSize(30);
-  text("score :"+score,1100,150);*/
+  fill(255,20,147);
+  textSize(40);
+  text("score :"+score,1100,120);
   console.log(score);
 
   fill("#00FFFF")
-  textSize(70);
-  textFont("Savoye LET");
+  textSize(40);
   text("Drag and release the polygon to hit lego blocks.",300,60);
 
   platform1.display();
